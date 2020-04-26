@@ -3,18 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <script type="text/javascript" src="Calculator.js"></script>
 </head>
 <body>
-  <h1>Hello world</h1>
-  <script>function Calculator(){
-    console.log('Hello,I am your calculator');
-    var A = prompt("Give me the first number");
-    var B = prompt("Give me the second number");
-    var Op = prompt("What is the operator needed?");
-    OperatorTest(Op);
-    }
-    Calculator();
-</script>  
+  <h1 align= "center">Calculator</h1>  
+  <table > 
+    <tr>
+      <h2 align= "center"> Press start to turn on the calculator </h2>
+    </tr>
+    <tr>
+      <p align='center'><input onClick ="addToEquation(this)" name="1" value="1"  type="button"> 
+        <input onClick ="addToEquation(this)" name="2" value="2" type="button">
+        <input onClick ="addToEquation(this)" name="3" value="3" type="button">
+        <input onClick ="addToEquation(this)" name="+" value="+" type="button">
+      </p>
+    </tr>
+    <td>
+      
+    <tr>
+      <p align='center'><input onClick ="addToEquation(this)" name="4" value="4"  type="button">
+        <input onClick ="addToEquation(this)" name="5" value="5" type="button">
+        <input onClick ="addToEquation(this)" name="6" value="6" type="button">
+        <input onClick ="addToEquation(this)" name="-" value="-" type="button">
+        <input onClick ="addToEquation(this)" name="/" value="/" type="button">
+      </p>
+      
+    </tr>
+    </td>
+    <td>
+      <tr>
+        <p align='center'><input onClick ="addToEquation(this)" name="7" value="7"  type="button"> 
+          <input onClick ="addToEquation(this)" name="8" value="8" type="button">
+          <input onClick ="addToEquation(this)" name="9" value="9" type="button">
+          <input onClick ="addToEquation(this)" name="*" value="*" type="button">
+          
+          
+        </p>
+        
+      </tr>
+      </td>
+      <p align="center  "> <input name="Equation"  type="text" ></p>
+      <p align="center  "><input value= "=" onClick="AlertResult()"type= "button">
+  </table>
 </body>
 </html>

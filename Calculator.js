@@ -38,7 +38,12 @@ function Calculator(){
     OperatorTest(Op,A,B);
     Power(A,B);
     Power(B,A);
-    }
+}
 
-Calculator();
+function addToEquation(objButton) {
+    document.getElementsByName("Equation").value += objButton.value;
+}
+function AlertResult(){
+    Alert(eval(document.getElementsByName("Equation").value));
+}
 
