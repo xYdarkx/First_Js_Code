@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <script type="text/javascript" src="Calculator.js"></script>
+    <script src="Calculator.js"></script>
+    
 </head>
 <body>
   <h1 align= "center">Calculator</h1>  
@@ -13,38 +14,40 @@
       <h2 align= "center"> Press start to turn on the calculator </h2>
     </tr>
     <tr>
-      <p align='center'><input onClick ="addToEquation(this)" name="1" value="1"  type="button"> 
-        <input onClick ="addToEquation(this)" name="2" value="2" type="button">
-        <input onClick ="addToEquation(this)" name="3" value="3" type="button">
-        <input onClick ="addToEquation(this)" name="+" value="+" type="button">
+      <p align='center'>
+        <button onClick ="addToEquation(this)" name="0"  value="0"  type="button"> 0</button> 
+        <button onClick ="addToEquation(this)" name="1"  value="1"  type="button"> 1</button> 
+        <button onClick ="addToEquation(this)" name="2" value="2" type="button"> 2</button>
+        <button onClick ="addToEquation(this)" name="3" value="3" type="button">3 </button>
+        <button onClick ="addToEquation(this)" name="+" value="+" type="button"> +</button>
       </p>
     </tr>
     <td>
       
     <tr>
-      <p align='center'><input onClick ="addToEquation(this)" name="4" value="4"  type="button">
-        <input onClick ="addToEquation(this)" name="5" value="5" type="button">
-        <input onClick ="addToEquation(this)" name="6" value="6" type="button">
-        <input onClick ="addToEquation(this)" name="-" value="-" type="button">
-        <input onClick ="addToEquation(this)" name="/" value="/" type="button">
+      <p align='center'><button onClick ="addToEquation(this)" name="4" value="4"  type="button"> 4</button>
+        <button onClick ="addToEquation(this)" name="5" value="5" type="button"> 5</button>
+        <button onClick ="addToEquation(this)" name="6" value="6" type="button">6 </button>
+        <button onClick ="addToEquation(this)" name="-" value="-" type="button"> -</button>
+        <button onClick ="addToEquation(this)" name="/" value="/" type="button"> /</button>
       </p>
       
     </tr>
     </td>
     <td>
       <tr>
-        <p align='center'><input onClick ="addToEquation(this)" name="7" value="7"  type="button"> 
-          <input onClick ="addToEquation(this)" name="8" value="8" type="button">
-          <input onClick ="addToEquation(this)" name="9" value="9" type="button">
-          <input onClick ="addToEquation(this)" name="*" value="*" type="button">
+        <p align='center'><button onClick ="addToEquation(this)" name="7" value="7"  type="button"> 7</button> 
+          <button onClick ="addToEquation(this)" name="8" value="8" type="button"> 8</button>
+          <button onClick ="addToEquation(this)" name="9" value="9" type="button"> 9</button>
+          <button onClick ="addToEquation(this)" name="*" value="*" type="button"> *</button>
           
           
         </p>
         
       </tr>
       </td>
-      <p align="center  "> <input name="Equation"  type="text" ></p>
-      <p align="center  "><input value= "=" onClick="AlertResult()"type= "button">
+      <p align="center  "> <input name="Equation" id ="Equation" type="textarea" ></p>
+      <p align="center  "><button value= "=" onClick="AlertResult()"type= "button"> = </button>
   </table>
 </body>
 </html>
