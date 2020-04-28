@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <script src="Calculator.js"></script>
+    <link rel="stylesheet" href="Calculator_Theme.css">
     
 </head>
 <body>
@@ -27,7 +28,7 @@
     <tr>
       <p align='center'><button onClick ="addToEquation(this)" name="4" value="4"  type="button"> 4</button>
         <button onClick ="addToEquation(this)" name="5" value="5" type="button"> 5</button>
-        <button onClick ="addToEquation(this)" name="6" value="6" type="button">6 </button>
+        <button onClick ="addToEquation(this)" name="6" value="6" type="button"> 6 </button>
         <button onClick ="addToEquation(this)" name="-" value="-" type="button"> -</button>
         <button onClick ="addToEquation(this)" name="/" value="/" type="button"> /</button>
       </p>
@@ -51,6 +52,7 @@
       </td>
       <p align="center  "> <input name="Equation" id ="Equation" type="textarea" ></p>
       <p align="center  "><button value= "=" onClick="AlertResult()"type= "button"> = </button>
+      <p align="center" ><button onClick="window.location.reload();"  value= "=" type= "submit"> Refresh </button></p>
   </table>
 </body>
 </html>

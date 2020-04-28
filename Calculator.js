@@ -4,5 +4,5 @@ function addToEquation(eleObj) {
 }
 
 function AlertResult(){
-    alert(eval(document.getElementById("Equation").value));
+    document.getElementById("Equation").value = eval(document.getElementById("Equation").value);
 }
